@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1823e3-8c97-4a06-b52e-e24124fe482c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DjangoProject1/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/templates/contact_information_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/templates/models.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/templates/parts_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/templates/service_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DjangoProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoProject1.iml" afterDir="false" />
+    <list default="true" id="6c1823e3-8c97-4a06-b52e-e24124fe482c" name="Changes" comment="4 лаба">
+      <change afterPath="$PROJECT_DIR$/DjangoProject1/models_and_admin.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmwshop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmwshop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -120,11 +113,32 @@
       <option name="presentableId" value="Default" />
       <updated>1747061968789</updated>
       <workItem from="1747061969888" duration="2942000" />
-      <workItem from="1747668895521" duration="779000" />
+      <workItem from="1747668895521" duration="3496000" />
     </task>
+    <task id="LOCAL-00001" summary="4 лаба">
+      <option name="closed" value="true" />
+      <created>1747669881197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747669881197</updated>
+    </task>
+    <task id="LOCAL-00002" summary="4 лаба">
+      <option name="closed" value="true" />
+      <created>1747669963423</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747669963423</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="4 лаба" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 лаба" />
   </component>
 </project>
