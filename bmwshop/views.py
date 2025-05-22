@@ -1,16 +1,28 @@
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
+from .models import Product
 
 def home_view(request):
-    return HttpResponse("<h1>Головна сторінка</h1><a href='/models/'>Моделі</a> | <a href='/parts/'>Запчастини</a> | <a href='/service/'>Сервіс</a> | <a href='/contact/'>Контакти</a>")
+    products = Product.objects.all()
+    context = {
+        "products": products
+    }
+    return render(request, 'home.html', context)
 
 def models_view(request):
-    return HttpResponse("<h1>Моделі BMW</h1><a href='/'>На головну</a>")
+    return render(request, 'models.html')
 
 def parts_view(request):
-    return HttpResponse("<h1>Запчастини</h1><a href='/'>На головну</a>")
+    return render(request, 'parts_page.html')
 
 def service_view(request):
-    return HttpResponse("<h1>Сервіс</h1><a href='/'>На головну</a>")
+    return render(request, 'service_page.html')
 
 def contact_view(request):
-    return HttpResponse("<h1>Контакти</h1><a href='/'>На головну</a>")
+    return render(request, 'contact_information_page.html')
+
+def product_detail_view(request, slug):
+    product = get_object_or_404(Product, slug=slug)
+    context = {
+        'product': product
+    }
+    return render(request, 'product_detail.html', context)

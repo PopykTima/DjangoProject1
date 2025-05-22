@@ -7,4 +7,7 @@ urlpatterns = [
     path('parts/', views.parts_view, name='parts'),
     path('service/', views.service_view, name='service'),
     path('contact/', views.contact_view, name='contact'),
-]  # <-- Ось ця дужка відсутня
+
+    # Шлях до сторінки деталей продукту
+    path('product/<slug:slug>/', views.product_detail_view, name='product_detail'),
+]

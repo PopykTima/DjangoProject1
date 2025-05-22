@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Основні кольори */
+:root {
+    --bmw-blue: #1c69d4;
+    --bmw-black: #000000;
+    --bmw-gray: #f5f5f5;
+    --bmw-dark-gray: #222;
+}
+
+/* Загальні налаштування */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--bmw-gray);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Навігація */
+.navbar {
+    background-color: var(--bmw-black) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+/* Кнопки */
+.btn-outline-primary {
+    color: var(--bmw-blue);
+    border-color: var(--bmw-blue);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bmw-blue);
+    color: #fff;
+}
+
+/* Карточки товарів */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+    height: 220px;
+}
+
+/* Текст карточки */
+.card-title a {
+    color: var(--bmw-black);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-title a:hover {
+    color: var(--bmw-blue);
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Футер */
+footer {
+    background-color: var(--bmw-black);
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Заголовки */
+h2, h4 {
+    color: var(--bmw-black);
+    font-weight: bold;
+}
+
