@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1823e3-8c97-4a06-b52e-e24124fe482c" name="Changes" comment="4 лаба">
-      <change afterPath="$PROJECT_DIR$/bmwshop/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/static/images/default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/static/images/no-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bmwshop/templates/product_detail.html" afterDir="false" />
+    <list default="true" id="6c1823e3-8c97-4a06-b52e-e24124fe482c" name="Changes" comment="6 і 7 лаба">
+      <change afterPath="$PROJECT_DIR$/bmwshop/bmwshop_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmwshop/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmwshop/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmwshop/templates/accessories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmwshop/templates/cars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmwshop/templates/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmwshop/templates/order_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmwshop/templates/order_success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmwshop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bmwshop/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmwshop/templates/contact_information_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/templates/contact_information_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bmwshop/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmwshop/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/templates/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bmwshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bmwshop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bmwshop/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +31,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -61,6 +67,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.DjangoProject1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -89,6 +96,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="DjangoProject1.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -124,6 +132,7 @@
       <updated>1747061968789</updated>
       <workItem from="1747061969888" duration="2942000" />
       <workItem from="1747668895521" duration="3496000" />
+      <workItem from="1748099534671" duration="4109000" />
     </task>
     <task id="LOCAL-00001" summary="4 лаба">
       <option name="closed" value="true" />
@@ -141,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747669963423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="6 і 7 лаба">
+      <option name="closed" value="true" />
+      <created>1747932152267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747932152267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +166,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="4 лаба" />
-    <option name="LAST_COMMIT_MESSAGE" value="4 лаба" />
+    <MESSAGE value="6 і 7 лаба" />
+    <option name="LAST_COMMIT_MESSAGE" value="6 і 7 лаба" />
   </component>
 </project>

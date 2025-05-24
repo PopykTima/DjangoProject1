@@ -1,15 +1,20 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}{{ product.name }}{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 text-center">
             {% if product.image %}
-                <img src="{{ product.image.url }}" class="img-fluid" alt="{{ product.name }}">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}"
+                     class="img-fluid"
+                     style="width:500px; height:330px; object-fit:cover;">
             {% else %}
-                <p>Зображення відсутнє</p>
+                <img src="{% static 'images/no-image.png' %}" alt="Немає зображення"
+                     class="img-fluid"
+                     style="width:500px; height:330px; object-fit:cover;">
             {% endif %}
         </div>
         <div class="col-md-6">
@@ -31,7 +36,7 @@
                 <p><strong>Ціна:</strong> {{ product.price }} грн</p>
             {% endif %}
 
-            <button class="btn btn-success">Купити</button>
+            <a href="{% url 'order_product' product.slug %}" class="btn btn-success">Купити</a>
         </div>
     </div>
 </div>

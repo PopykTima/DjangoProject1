@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Автомобілі{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+  <h2 class="text-3xl font-bold mb-6 text-center">Всі автомобілі BMW</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {% for product in products %}
+      <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 flex flex-col">
+        <a href="{% url 'product_detail' product.slug %}">
+          {% if product.image %}
+            <img src="{{ product.image.url }}" alt="{{ product.name }}"
+                 class="w-full object-cover" style="width:500px; height:330px;">
+          {% else %}
+            <img src="{% static 'images/no-image.png' %}" alt="Немає зображення"
+                 class="w-full object-cover" style="width:500px; height:330px;">
+          {% endif %}
+        </a>
+        <div class="p-4 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold mb-1">{{ product.name }}</h3>
+          <p class="text-gray-600 mb-1">{{ product.year }} • {{ product.get_condition_display }}</p>
+
+          {% if product.discount_price %}
+            <p class="text-red-500 font-bold text-lg">
+              {{ product.discount_price }} ₴
+              <span class="line-through text-gray-500 text-sm">{{ product.price }} ₴</span>
+            </p>
+          {% else %}
+            <p class="text-blue-700 font-bold text-lg">{{ product.price }} ₴</p>
+          {% endif %}
+
+          <p class="text-sm text-gray-500 mt-1 mb-4">Статус: {{ product.get_status_display }}</p>
+
+          <a href="{% url 'product_detail' product.slug %}"
+             class="mt-auto inline-block bg-green-600 text-white text-center px-4 py-2 rounded hover:bg-green-700 transition">
+            Купити
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
